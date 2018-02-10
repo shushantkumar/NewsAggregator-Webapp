@@ -7,6 +7,7 @@ In this web app I have demonstrated how we can use <b>Go Routines</b> to speed u
 Goroutines are functions or methods that run concurrently with other functions or methods. Goroutines can be thought of as light weight threads. The cost of creating a Goroutine is tiny when compared to a thread. On Go we can run hundreds of thousands or millions of goroutines.
 
 <h2>How to use</h2>
+
 ### Requirements
 Go must be installed to run the program.<br>
 To install Go follow the official site instructions <a>https://golang.org/doc/install</a>
