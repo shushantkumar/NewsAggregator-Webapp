@@ -1,6 +1,6 @@
 # News Aggregator
 
-This is a web application which collects daily news from The Washington Post website using their sitemap url.<br>
+This is a Web Application developed using GoLang which collects daily news from The Washington Post website using their sitemap url.<br>
 
 In this web app I have demonstrated how we can use <b>Go Routines</b> to speed up the loading speed of the site by reducing the idle time using <b>Concept of Concurrency</b><br>
 
