@@ -7,7 +7,7 @@ In this web app I have demonstrated how we can use <b>Go Routines</b> to speed u
 Goroutines are functions or methods that run concurrently with other functions or methods. Goroutines can be thought of as light weight threads. The cost of creating a Goroutine is tiny when compared to a thread. On Go we can run hundreds of thousands or millions of goroutines.
 
 <h2>How to use</h2>
-<h4>Requirements</h4>
+### Requirements
 Go must be installed to run the program.<br>
 To install Go follow the official site instructions <a>https://golang.org/doc/install</a>
 
@@ -37,7 +37,7 @@ To install Go follow the official site instructions <a>https://golang.org/doc/in
    and open http://localhost:8000 in your browser  
 <br>
 
-### Working
+<h2> Working </h2>
 
 * The file before_conc.go access sitemaps without any go routines. The idle time while loading was 11631.0 ms (avg around 11500 ms for other tries).<br>
 * Since the web app accesses hundreds of sitemaps and it sends request for each sitemap and waits for response it wastes a lot of time incresing the idle time.<br> 
