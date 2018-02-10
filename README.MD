@@ -30,6 +30,7 @@ To install Go follow the official site instructions <a>https://golang.org/doc/in
     ```
         go run final_withconc.go
     ``` 
+   and open http://localhost:8000 in your browser  
 4. To run the version with Concurrency not implemented 
 
     ```
@@ -41,7 +42,7 @@ To install Go follow the official site instructions <a>https://golang.org/doc/in
 <h2> Working </h2>
 
 * The file <b>before_conc.go</b> access sitemaps without any go routines. The idle time while loading was <b>11631.0 ms</b> (avg around 11500 ms for other tries).<br>
-* Since the web app accesses hundreds of sitemaps and it sends request for each sitemap and waits for response it wastes a lot of time incresing the idle time.<br> 
+* Since the web app accesses hundreds of sitemaps and it sends request for each sitemap and waits for response it wastes a lot of time increasing the idle time.<br> 
 
 ![](before_concurrency.png)
 
