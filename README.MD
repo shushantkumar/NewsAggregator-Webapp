@@ -40,14 +40,14 @@ To install Go follow the official site instructions <a>https://golang.org/doc/in
 
 <h2> Working </h2>
 
-* The file before_conc.go access sitemaps without any go routines. The idle time while loading was 11631.0 ms (avg around 11500 ms for other tries).<br>
+* The file <b>before_conc.go</b> access sitemaps without any go routines. The idle time while loading was <b>11631.0 ms</b> (avg around 11500 ms for other tries).<br>
 * Since the web app accesses hundreds of sitemaps and it sends request for each sitemap and waits for response it wastes a lot of time incresing the idle time.<br> 
 
 ![](before_concurrency.png)
 
 * To reduce the loading time I used Go Routines<br> 
-* The file final_withconc.go implements the same function but uses Go Routines for accessing each internal sitemaps, so basically when one request is sent other requests are also sent concurrently without waiting for previous request to get back the response.<br>
-* After implementing go routines for this web application the idle time went down to 1444.9 ms (avg around 1450 ms for other tries).<br>
+* The file <b>final_withconc.go</b> implements the same function but uses Go Routines for accessing each internal sitemaps, so basically when one request is sent other requests are also sent concurrently without waiting for previous request to get back the response.<br>
+* After implementing go routines for this web application the idle time went down to <b>1444.9 ms</b> (avg around 1450 ms for other tries).<br>
 
 ![](after_concurrency.jpg)
 
