@@ -46,13 +46,14 @@ To install Go follow the official site instructions <a>https://golang.org/doc/in
 
 ![](before_concurrency.png)
 
-* To reduce the loading time I used Go Routines<br> 
+* To reduce the loading time I used Go Routines.<br> 
 * The file <b>final_withconc.go</b> implements the same function but uses Go Routines for accessing each internal sitemaps, so basically when one request is sent other requests are also sent concurrently without waiting for previous request to get back the response.<br>
 * After implementing go routines for this web application the idle time went down to <b>1444.9 ms</b> (avg around 1450 ms for other tries).<br>
 
 ![](after_concurrency.jpg)
 
-* The basic concept used is concurrency. We also use <b>Channels</b> to provide concurrency by breaking it into chunks of news elements.<br> 
-* Synchronization needs to be there while using go routines. To implement it I imported "sync". Go provides another built in feature <b>defer</b> and functions under sync - Done(), Add() and Wait() <br>
+* The basic concept used here is concurrency. I also used <b>Channels</b> to provide concurrency. It allows goroutines to synchronize without explicit locks or condition variables.<br> 
+* Synchronization needs to be there while using go routines. To implement it I imported "sync". Go provides another built in feature <b>defer</b> and functions under sync - Done(), Add() and Wait(). <br>
 
+Sitemap link : <a>https://www.washingtonpost.com/news-sitemap-index.xml</a>
 
