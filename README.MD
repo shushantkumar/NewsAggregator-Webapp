@@ -4,7 +4,7 @@ This is a Web Application developed using GoLang which collects daily news from 
 
 In this web app I have demonstrated how we can use <b>Go Routines</b> to speed up the loading speed of the site by reducing the idle time using <b>Concept of Concurrency</b><br>
 
-Goroutines are functions or methods that run concurrently with other functions or methods. Goroutines can be thought of as light weight threads. The cost of creating a Goroutine is tiny when compared to a thread. On Go we can run hundreds of thousands or millions of goroutines.
+Go routines are functions or methods that run concurrently with other functions or methods. Go routines can be thought of as light weight threads. The cost of creating a Go routine is tiny when compared to a thread. On Go we can run hundreds of thousands or millions of go routines.
 
 <h2>How to use</h2>
 
